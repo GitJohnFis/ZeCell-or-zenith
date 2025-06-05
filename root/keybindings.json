@@ -1,0 +1,22 @@
+[
+  {
+    "key": "ctrl+shift+r ctrl+e",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.function",
+      "apply": "ifSingle"
+    },
+    "when": "editorTextFocus && !editorReadonly && editorHasCodeActionsProvider && editorHasDocumentHighlightProvider"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+    "when": "!inEditorsPicker"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.quickOpenLeastRecentlyUsedEditor",
+    "when": "!inEditorsPicker"
+  }
+]
+
